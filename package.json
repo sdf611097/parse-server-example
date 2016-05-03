@@ -11,10 +11,13 @@
   "dependencies": {
     "express": "~4.2.x",
     "kerberos": "~0.0.x",
+    "mongodb-runner": "3.1.15",
     "parse": "~1.6.12",
     "parse-server": "~2.1"
   },
   "scripts": {
+    "startDB": "./node_modules/.bin/mongodb-runner start",
+    "stopDB": "./node_modules/.bin/mongodb-runner stop",
     "start": "node index.js"
   },
   "engines": {
